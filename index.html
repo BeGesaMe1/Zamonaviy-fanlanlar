@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamonaviy Fanlar Ruyhatdan o'tish</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="icon" type="image/x-icon" href="./assets/photo_2024-11-24_01-49-09.jpg">
+</head>
+<body>
+
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img src="./assets/photo_2024-11-24_01-49-09.jpg" class="w-[50px] h-[50px] rounded-full" alt="">
+        <span class="ml-3 text-xl">Zamonaviy Fanlar</span>
+      </a>
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900 cursor-pointer">Bosh sahifa</a>
+        <a class="mr-5 hover:text-gray-900 cursor-pointer">Fanlar</a>
+        <a class="mr-5 hover:text-gray-900 cursor-pointer" id="yangiliklar">Yangiliklar</a>
+        <a href="./bizhaqimizda.html" class="mr-5 hover:text-gray-900">Biz haqimizda</a>
+      </nav>
+      <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Ruhatdan o'tish
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+
+    
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+          <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+            <h1 class="title-font font-medium text-3xl text-gray-900">Zamonaviy Fanlar O'quv Markazi</h1>
+            <p class="leading-relaxed mt-4">Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock starladder roathse. Craies vegan tousled etsy austin.</p>
+          </div>
+          <form action="" onsubmit=" return sendtelegram()" class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+            <div>
+                <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Ruyhatdan o'tish</h2>
+                <div class="relative mb-4">
+                  <label for="full-name" class="leading-7 text-sm text-gray-600">Ism Familya</label>
+                  <input type="text" id="name" name="name" placeholder="Bekjon Shavkatov" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                  <label for="email" class="leading-7 text-sm text-gray-600">Telfon nomer</label>
+                  <input type="tel" id="email" name="email" value="+998" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+
+                <!-- Yunalish -->
+                <div class="relative mb-4">
+                  <label for="email" class="leading-7 text-sm text-gray-600">Yunalish tanlang </label>
+                  <select name="" id="fanlar" class="block mt-2 p-3 rounded-md">
+                    <option value="1">Ingliz tili</option>
+                    <option value="2">Rus tili</option>
+                    <option value="3">Koris tili</option>
+                    <option value="4">Matimatika</option>
+                    <option value="5">Ona tili</option>
+                    <option value="6">Web dasturlash (Frontend)</option>
+                    <option value="7">Web dasturlash (Backend)</option>
+                    <option value="8">Foundtion</option>
+                  </select>
+                </div>
+
+                <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Yuborish</button>
+                <p class="text-xs text-gray-500 mt-3">Ma'lumotlaringizni to'g'ri kiritganingizga ishonch hosil qiling.</p>
+              </div>
+          </form>
+        </div>
+      </section>
+
+
+
+
+
+      <script src="app.js"></script>
+
+</body>
+</html>
