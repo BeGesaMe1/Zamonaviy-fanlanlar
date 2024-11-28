@@ -12,6 +12,8 @@ var u_name, email, message;
 
 
 let yunalish = document.querySelector('#fanlar');
+let promocode = document.querySelector('#promocode');
+
 
 function yunalishlar(yunalish){
     
@@ -21,6 +23,13 @@ function yunalishlar(yunalish){
     return text
 }
 
+function procode(person){
+    
+    var value2 = person.value;
+    var matn = person.options[person.selectedIndex].text;
+
+    return matn
+}
 
 var ready = function() {
     u_name = document.getElementById("name").value;
@@ -28,7 +37,7 @@ var ready = function() {
     fanlar = document.getElementById("fanlar").value;
     // familya = document.getElementById("familya").value;
     // message = document.getElementById("message").value;
-    message = "Ismi: " + u_name + "\nNomer:" + email + "\nYunalish:" + yunalishlar(yunalish);
+    message = "Ismi: " + u_name + "\nNomer:" + email + "\nYunalish:" + yunalishlar(yunalish) + "\nPromaKod:" + procode(promocode)
     
 };
 var sendtelegram = function() {
